@@ -8,12 +8,4 @@
   npm run dev
 ```
 
-## Base URL
-
-const PORT = process.env.PORT || 3333;
-http://localhost:PORT
-
-## Endpoint
-
-### /categories
-### /specifications
+### You can see doc in end point: /api-docs
