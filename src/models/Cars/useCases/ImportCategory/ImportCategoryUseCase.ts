@@ -38,7 +38,7 @@ class ImportCategoryUseCase {
 
   async execute(file: Express.Multer.File): Promise<void> {
     const categories = await this.loadCategories(file);
-
+    console.log("sei la");
     categories.map((category) => {
       const { name, description } = category;
 
@@ -53,4 +53,5 @@ class ImportCategoryUseCase {
     });
   }
 }
+
 export { ImportCategoryUseCase };

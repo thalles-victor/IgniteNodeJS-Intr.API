@@ -17,3 +17,7 @@ http://localhost:PORT
 
 ### /categories
 ### /specifications
+
+```console 
+  sudo docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' rentx
+```

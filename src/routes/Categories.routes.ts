@@ -2,7 +2,7 @@ import { Router } from "express";
 import type { Request, Response } from "express";
 import multer from "multer";
 
-import { createCategoryController } from "../models/Cars/useCases/CreateCategory";
+import createCategoryController from "../models/Cars/useCases/CreateCategory";
 import { importCategoryController } from "../models/Cars/useCases/ImportCategory";
 import { listCategoriesController } from "../models/Cars/useCases/ListCategory";
 
@@ -17,7 +17,7 @@ categoriesRoutes.get("/", (request: Request, response: Response) => {
 });
 
 categoriesRoutes.post("/", (request: Request, response: Response) => {
-  return createCategoryController.handle(request, response);
+  return createCategoryController().handle(request, response);
 });
 
 categoriesRoutes.post(

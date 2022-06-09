@@ -9,5 +9,4 @@ const listSpecificationUseCase = new ListSpecificationsUseCase(
 const listSpecificationsControllers = new ListSpecificationsControlles(
   listSpecificationUseCase
 );
-
 export { listSpecificationsControllers };
